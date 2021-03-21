@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap is included from a CDN for the html file -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        
+        <!--The background color of the website is being set with the RGB value -->
+        <!--The abs class elements are positioned relative to the nearest non-static ancestor (div) -->
+        <!--The paragrpah and order list elements have the same font size - 30 pixels -->
+        <!--An animation is included to draw the word "P"-->
+        <style>
+           body{
+               
+                background-color: rgb(63, 252, 189);
+            }
+
+            .abs{
+                position: absolute;
+                font-size: 45px;
+                color:white;
+            }
+
+            p,ol{
+                font-size: 30px;
+            }
+            div{
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: red;
+                animation-name: animation1;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;  
+            }      
+
+            @keyframes animation1 {
+                
+                0%   {background-color: red; left:0px; top:0px;}
+                20%  {background-color: blue; left:0px; top:200px;}
+                40%  {background-color: green; left:0px; top:0px;}
+                60%  {background-color: yellow; left:200px; top:0px;}
+                80%  {background-color: rgb(247, 0, 255); left:0px; top:100px;}
+                100%  {background-color: red; left:0px; top:0px;}
+            }
+        </style>
+
+        <!-- Home Page Icon and title of the home page are included -->
+        <h1><img src="photo/home.png" alt="Home Page Icon" style="width: 50px; height: 50px;"> My Home Page</h1>
+               
+    </head>
+    <body>
+        <!--The top margin of the block-level element is set to 50 pixels -->
+        <section style="margin-top: 50px;">
+
+            <!--The abs class elements are positioned relative to the nearest non-static ancestor (div) -->
+            <span class="abs">This is me</span>
+
+            <!--A picture of me on the left side and a paragraph of introducing myself including my name on the right side are included-->
+            <img src="photo/GordonRamsay.png" alt="My picture" style="float: left; margin-right: 20px;">
+            <p>I am <b>Hui Kwan Ching</b> and my nickname is Andy</p>
+
+            <!--A line break is inserted -->
+            <br>
+
+            <!--A List UL icon and the heading of the list are inserted-->
+            <h2><i class="fas fa-list"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColo r" class="bi bi-list-ul" style="margin-left: -15px; margin-right: 15px;" >
+                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>My Top Three Dessert</h2>
+
+            <!--An ordered list is displayed-->
+            <ol style="margin:20px;">  
+                <li>Egg tarts</li>
+                <li>Tofu pudding</li>
+                <li>Tangyuan</li>
+            </ol>
+        </section>     
+
+        <div style="margin-left: 1000px; "></div>
+    </body>  
+</html>
